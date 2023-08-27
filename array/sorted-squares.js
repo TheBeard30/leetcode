@@ -10,7 +10,7 @@
  *
  * 此时可以考虑双指针法了，i指向起始位置，j指向终止位置。
  *
- * 定义一个新数组result，和A数组一样的大小，让k指向result数组终止位置。
+ * 定义一个新数组result，和nums数组一样的大小，让k指向result数组终止位置。
  * @param {Array} nums
  */
 function sortedSquares(nums) {
