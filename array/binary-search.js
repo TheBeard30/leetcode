@@ -1,6 +1,6 @@
 /**
  * @description 要在二分查找的过程中，保持不变量，就是在while寻找中每一次边界的处理都要坚持根据区间的定义来操作，这就是循环不变量规则。
- * 二分查找法
+ * 704二分查找法
  * @param {Array}  nums
  * @param {number} target
  */
