@@ -22,7 +22,7 @@ var fourSumCount = function(nums1, nums2, nums3, nums4) {
       map.set(sum,(map.get(sum) || 0) + 1);
     }
   }
-
+  // 找到如果 0-(c+d) 在map中出现过的话，就把map中key对应的value也就是出现次数统计出来
   for(let i = 0; i < nums3.length; i++){
     for(let j = 0; j < nums4.length; j++){
       const sum = nums3[i] + nums4[j];
