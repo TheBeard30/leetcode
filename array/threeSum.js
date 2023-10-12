@@ -35,15 +35,17 @@ var threeSum = function(nums) {
         left++;
       }else{
         result.push([nums[i],nums[left],nums[right]]);
-        left++;
-        right--;
+
+        // 去重逻辑应该放在找到一个三元组之后，对b 和 c去重
         while (left < right && nums[left] === nums[left + 1]){
           left++;
         }
         while (left < right && nums[right] === nums[right - 1]){
           right--;
         }
-
+        // 找到答案时，双指针同时收缩
+        left++;
+        right--;
       }
     }
   }
